@@ -1,0 +1,333 @@
+
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style2.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <title>Dashboard</title>
+  </head>
+  <body id="body">
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+      <a href="#" class="navbar-brand">
+        <img src="icons/logo used in header.svg"/>
+    </a>
+      <button
+        class="navbar-toggler"
+        data-toggle="collapse show"
+        data-target="#navbarCollapse"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse collapse-show" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto">
+          <li class="navbar-item">
+            <a href="#" class="nav-link active">Dashboard</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#" class="nav-link" style="color:#3fd28b">Content</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#" class="nav-link" style="color:#3fd28b">Users</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#" class="nav-link" style="color:#3fd28b">Reports</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#" class="nav-link" style="color:#3fd28b">Admin</a>
+          </li>
+          <li class="navbar-item">
+            <a href="#" class="nav-link"
+              ><img src="icons/alerts.svg" alt="alerts"
+            /></a>
+          </li>
+          <li class="navbar-item">
+            <a href="#" class="nav-link"
+              ><img src="icons/announcements.svg" alt="announcements"
+            /></a>
+          </li>
+          <li class="navbar-item">
+            <a href="#" class="nav-link"
+              ><img src="icons/preview.svg" alt="profile image"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="course_class_nav">
+      <div class="course_field">
+        <img class="course_class_img" src="icons/courses.svg" alt="course" />
+        <p class="margin_bottom_zero margin_right_auto">
+          <span id="total_course" style="font-weight: bold">4 </span>Courses
+        </p>
+      </div>
+      <div class="class_field">
+        <img class="course_class_img" src="icons/classes.svg" alt="classes" />
+        <p class="margin_bottom_zero margin_right_auto">
+          <span id="total_classes" style="font-weight: bold">4 </span>Classes
+        </p>
+      </div>
+    </div>
+
+    <div class="sort">
+      <p class="sort_totalcourses">Showing 4 of 4 courses</p>
+      <div class="sort_input">
+        
+        <div class="list_area">
+          <p>sort By: <span class="list_selection">Course Name</span></p>
+                    <img class="down_arrow" src="icons/arrow-down.svg" />
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div id="course_1" class="course">
+        <div class="flex">
+          <img class="course_img" src="images/imageMask-1.svg" />
+
+          <div class="course_info">
+            <p class="course_name">Acceleration</p>
+            <div class="course_branch_grade">
+              <p class="course_branch right_border">Physics</p>
+              <p class="course_grade">
+                Grade 7<span
+                  style="color: rgb(23, 228, 37); font-size: xx-small"
+                  >+2</span
+                >
+              </p>
+            </div>
+            <div class="course_tableofcontent">
+              <p class="course_units right_margin margin_bottom_zero">
+                <span id="units" style="font-weight: bolder; color: black"
+                  >4 </span
+                >Units
+              </p>
+              <p class="course_lessons right_margin margin_bottom_zero">
+                <span id="lessons" style="font-weight: bolder; color: black"
+                  >18 </span
+                >Lessons
+              </p>
+              <p class="course_topics right_margin margin_bottom_zero">
+                <span id="topics" style="font-weight: bolder; color: black"
+                  >24 </span
+                >Topics
+              </p>
+            </div>
+            <div class="list_area">
+              <p class="list_selection">Mr. Frank's Class B</p>
+              <img class="down_arrow" src="icons/arrow-down.svg" />
+            </div>
+            <div class="course_students_schedual">
+              <p class="students">
+                <span class="student_count">50</span> Students
+              </p>
+              <p class="schedual">
+                <span class="start_date"> 21-Jan-2020</span
+                ><span class="end_date"> - 21-Aug-2020</span>
+              </p>
+            </div>
+          </div>
+
+          <img class="favourite" src="icons/favourite.svg" />
+        </div>
+        <div class="logos">
+          <img src="icons/preview.svg" alt="preview" />
+          <img src="icons/manage course.svg" alt="manage course" />
+          <img src="icons/grade submissions.svg" alt="grade submissions" />
+          <img src="icons/reports.svg" alt="reports" />
+        </div>
+      </div>
+      <div id="course_2" class="course">
+        <div class="flex">
+          <img class="course_img" src="images/imageMask-1.png" />
+
+          <div class="course_info">
+            <p class="course_name">Displacement, Velocity and Speed</p>
+            <div class="course_branch_grade">
+              <p class="course_branch right_border">Physics</p>
+              <p class="course_grade">
+                Grade 6<span
+                  style="color: rgb(23, 228, 37); font-size: xx-small"
+                  >+3</span
+                >
+              </p>
+            </div>
+            <div class="course_tableofcontent">
+              <p class="course_units right_margin margin_bottom_zero">
+                <span id="units" style="font-weight: bolder; color: black"
+                  >2 </span
+                >Units
+              </p>
+              <p class="course_lessons right_margin margin_bottom_zero">
+                <span id="lessons" style="font-weight: bolder; color: black"
+                  >15 </span
+                >Lessons
+              </p>
+              <p class="course_topics right_margin margin_bottom_zero">
+                <span id="topics" style="font-weight: bolder; color: black"
+                  >20 </span
+                >Topics
+              </p>
+            </div>
+            <div class="list_area">
+              <p class="list_selection noclasses">No Classes</p>
+              <img class="down_arrow" src="icons/arrow-down.svg" />
+            </div>
+            <div class="course_students_schedual none">
+              <p class="students">
+                <span class="student_count">50</span> Students
+              </p>
+              <p class="schedual">
+                <span class="start_date"> 21-Jan-2020</span
+                ><span class="end_date"> - 21-Aug-2020</span>
+              </p>
+            </div>
+          </div>
+
+          <img class="favourite" src="icons/favourite.svg" />
+        </div>
+        <div class="logos">
+          <img src="icons/preview.svg" alt="preview" />
+          <img src="icons/manage course.svg" alt="manage course" />
+          <img src="icons/grade submissions.svg" alt="grade submissions" />
+          <img src="icons/reports.svg" alt="reports" />
+        </div>
+      </div>
+      <div id="course_3" class="course">
+        <div class="flex">
+          <img class="course_img" src="images/imageMask-2.png" />
+
+          <div class="course_info">
+            <p class="course_name">
+              Introduction to Biology: Micro organisms and hoe they affect the
+              other life Systems in Eng...
+            </p>
+            <div class="course_branch_grade">
+              <p class="course_branch right_border">Biology</p>
+              <p class="course_grade">
+                Grade 4<span
+                  style="color: rgb(23, 228, 37); font-size: xx-small"
+                  >+1</span
+                >
+              </p>
+            </div>
+            <div class="course_tableofcontent">
+              <p class="course_units right_margin margin_bottom_zero">
+                <span id="units" style="font-weight: bolder; color: black"
+                  >5 </span
+                >Units
+              </p>
+              <p class="course_lessons right_margin margin_bottom_zero">
+                <span id="lessons" style="font-weight: bolder; color: black"
+                  >16 </span
+                >Lessons
+              </p>
+              <p class="course_topics right_margin margin_bottom_zero">
+                <span id="topics" style="font-weight: bolder; color: black"
+                  >22 </span
+                >Topics
+              </p>
+            </div>
+            <div class="list_area">
+              <p class="list_selection">All Classes</p>
+              <img class="down_arrow" src="icons/arrow-down.svg" />
+            </div>
+            <div class="course_students_schedual">
+              <p class="students">
+                <span class="student_count">300</span> Students
+              </p>
+              <p class="schedual none">
+                <span class="start_date"> 21-Jan-2020</span
+                ><span class="end_date"> - 21-Aug-2020</span>
+              </p>
+            </div>
+          </div>
+
+          <img class="favourite" src="icons/favourite.svg" />
+        </div>
+        <div class="logos">
+          <img src="icons/preview.svg" alt="preview" />
+          <img src="icons/manage course.svg" alt="manage course" />
+          <img src="icons/grade submissions.svg" alt="grade submissions" />
+          <img src="icons/reports.svg" alt="reports" />
+        </div>
+      </div>
+      <div id="course_4" class="course">
+        <div class="flex">
+          <img class="course_img" src="images/imageMask-3.png" />
+
+          <div class="course_info">
+            <p class="course_name">Introduction to High School Mathematics</p>
+            <div class="course_branch_grade">
+              <p class="course_branch right_border">Mathematics</p>
+              <p class="course_grade">
+                Grade 8<span
+                  style="color: rgb(23, 228, 37); font-size: xx-small"
+                  >+3</span
+                >
+              </p>
+            </div>
+            <div class="course_tableofcontent none">
+              <p class="course_units right_margin margin_bottom_zero">
+                <span id="units" style="font-weight: bolder; color: black"
+                  >4 </span
+                >Units
+              </p>
+              <p class="course_lessons right_margin margin_bottom_zero">
+                <span id="lessons" style="font-weight: bolder; color: black"
+                  >18 </span
+                >Lessons
+              </p>
+              <p class="course_topics right_margin margin_bottom_zero">
+                <span id="topics" style="font-weight: bolder; color: black"
+                  >24 </span
+                >Topics
+              </p>
+            </div>
+            <div class="list_area">
+              <p class="list_selection">Mr. Frank's Class B</p>
+              <img class="down_arrow" src="icons/arrow-down.svg" />
+            </div>
+            <div class="course_students_schedual">
+              <p class="students">
+                <span class="student_count">44</span> Students
+              </p>
+              <p class="schedual">
+                <span class="start_date"> 14-Oct-2019</span
+                ><span class="end_date"> - 20-Oct-2020</span>
+              </p>
+            </div>
+          </div>
+
+          <img class="favourite" src="icons/favourite.svg" />
+        </div>
+        <div class="logos">
+          <img src="icons/preview.svg" alt="preview" />
+          <img src="icons/manage course.svg" alt="manage course" />
+          <img src="icons/grade submissions.svg" alt="grade submissions" />
+          <img src="icons/reports.svg" alt="reports" />
+        </div>
+      </div>
+    </div>
+    <div id="info" class="info">
+      <p>About Us</p>
+      <p>Contact us.</p>
+    </div>
+
+    <footer id="footer">
+      <img id="footer_logo" src="icons/logo used in footer.svg" />
+      <p id="copyright">
+        Copyright 2020-2021 Zeus Systems Pvt. Ltd. All rights reserved.
+      </p>
+    </footer>
+  </body>
+</html>
