@@ -1,78 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login with Quantum</title>
-    <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts Pre Connect -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <!-- Meta Tags -->
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Fonts Links (Roboto 400, 500 and 700 included) -->
+
+
+  <!-- CSS Files Links -->
+  <link rel="stylesheet" href="login.css">
+  
+  <!-- Title -->
+  <title>Quantum Login</title>
 </head>
-
 <body>
-    <div class="header">
-        <img src="icons/logo used in header.svg" alt="">
-    </div>
-    <div class="container">
-        <div style="display: flex; gap: 150px; font-family: quickstand;">
-            <img src="icons/back.svg">
-            <h3>Login with Quantam</h3>
+  <header>
+    <div class="header"><img class="logo_header" src="./Assets/logo used in header.svg"/></div>
+  </header>
+
+  <main>
+    <div class="card">
+      <div class="container">
+        <div class="card_header">
+            <button><img src="./Assets/back.svg"/></button>
+            <p class="card_heading">Log in with Quantum</di>
         </div>
-        <div style="display: flex; gap: 50px;">
-            <div style="display: flex; gap: 4px;">
-                <img src="icons/radio-button-on.svg" alt="">
-                <p>District</p>
+        <form> 
+        <div class="card_body">
+          <div class="radio_group">
+            <div class="radio_element">
+              <input
+              type="radio"
+              id="District"
+              value="District"
+              name="radio"
+              checked
+            />
+              <p>&nbsp;District</p>
             </div>
-            <div style="display: flex; gap: 4px;">
-                <img src="icons/radio-button-off.svg" alt="">
-                <p>Independent school</p>
+            <div class="radio_element">
+              <input
+              type="radio"
+              id="Independent School"
+              value="Independent School"
+              name="radio"
+              checked
+            />
+              <p>&nbsp;Independent School</p>
             </div>
         </div>
-        <p style="margin-bottom: -10px;">State*</p>
-        <div style="display: flex; gap: 400px; border-bottom: 1px solid lightgray;">
-            <p style="margin-bottom: 0px;">Alabama</p>
-            <img src="icons/arrow-down.svg" alt="">
+        <div class="drop-down">
+          <label class="text-muted">State*</label>
+          <select id="State" name="State" required>
+            <option value="1">Alabama</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+          <label class="text-muted">District*</label>
+          <select id="District" name="District" required>
+            <option value="1">Alabama School District</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
         </div>
-
-        <p style="margin-bottom: -10px; margin-top: 40px;">District*</p>
-        <div style="display: flex; gap: 300px; border-bottom: 1px solid lightgray;">
-            <p style="margin-bottom: 0px;">Alabama School District</p>
-            <img src="icons/arrow-down.svg" alt="">
+        <div class="Text_input">
+          <input type="text" id="fname" name="fname" placeholder="Username/Email ID*" required><br>
+          <span class="forgot_option">FORGOT USERNAME?</span>
         </div>
-
+        <div class="Text_input">
+          <input type="password" id="fname" name="fname" placeholder="Password*" required><br>
+          <span class="forgot_option">FORGOT PASSWORD?</span>
+        </div>
+        <div class="Remember_ME">
+          <input type="checkbox" id="Remember_ME" name="Remember_ME" value="Remember_ME">
+          <label for="Remember_text">Remember Me</label><br>
+        </div>
         
-        <div style="display: flex; gap: 330px; border-bottom: 1px solid lightgray; margin-bottom: -10px;  margin-top: 40px;">
-            <p style="margin-bottom: 0px;">Username/Email ID</p>
-        </div>
-        <p style="font-size: small; text-align: right; color:#459070">FORGOT USERNAME?</p>
+          <button type="submit" class="cta">LOG IN</button>
         
-        <div style="display: flex; gap: 400px; border-bottom: 1px solid lightgray; margin-bottom: -10px;  margin-top: 35px;">
-            <p style="margin-bottom: 0px;">Password</p>
-            <img src="icons/preview.svg" alt="">
+         
+        </form>
         </div>
-        <p style="font-size: small; text-align: right; color:#459070">FORGOT PASSWORD?</p>
-        
-        <div style="display: flex; gap: 5px;">
-            <img src="icons/checkbox-checked.svg" alt="">
-            <p><b>Remember me</b></p>
-        </div>
+      </div>
+  </main>
 
-        <div class="c1">
-            LOG IN
-        </div>          
+  <footer>
+    <div class="upper_footer">
+      <a>About </a>
+      <span>&nbsp;|&nbsp;</span>
+      <a> Contact Us</a>
     </div>
-    <div>
-        <p style="text-align: center; color: #3fd28b; padding-top: 15px;">About | Contact Us</p>
+    <div class="lower_footer">
+      <img src="Assets/logo used in footer.svg"/>
+      <div class="text-muted">&nbsp;|&nbsp;</div>
+      <small> Copyright © 2020-2021 <b>Zeus Systems Pvt. Ltd.</b> All rights reserved.</small>
     </div>
-    
-      <footer id="footer">
-        <img id="footer_logo" src="icons/logo used in footer.svg" />
-        <p id="copyright">
-          Copyright 2020-2021 Zeus Systems Pvt. Ltd. All rights reserved.
-        </p>
-      </footer>
-   
-    </div>
+  </footer>
+
+  <noscript>Your browser don't support JavaScript!</noscript>
+  <script src="./scripts.js"></script>
 </body>
-
 </html>
